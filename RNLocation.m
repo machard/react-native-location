@@ -77,6 +77,11 @@ RCT_EXPORT_METHOD(startUpdatingLocation)
     [self.locationManager startUpdatingLocation];
 }
 
+RCT_EXPORT_METHOD(startUpdatingHeading)
+{
+    [self.locationManager startUpdatingHeading];
+}
+
 RCT_EXPORT_METHOD(stopMonitoringSignificantLocationChanges)
 {
     [self.locationManager stopMonitoringSignificantLocationChanges];
@@ -85,6 +90,11 @@ RCT_EXPORT_METHOD(stopMonitoringSignificantLocationChanges)
 RCT_EXPORT_METHOD(stopUpdatingLocation)
 {
     [self.locationManager stopUpdatingLocation];
+}
+
+RCT_EXPORT_METHOD(stopUpdatingHeading)
+{
+    [self.locationManager stopUpdatingHeading];
 }
 
 -(NSString *)nameForAuthorizationStatus:(CLAuthorizationStatus)authorizationStatus

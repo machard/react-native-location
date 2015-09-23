@@ -1,6 +1,6 @@
 #import <CoreLocation/CoreLocation.h>
 
-#import "RCTBridge.h"
+#import "RCTBridgeModule.h"
 #import "RCTConvert.h"
 #import "RCTEventDispatcher.h"
 
@@ -14,7 +14,7 @@
 
 @implementation RNLocation
 
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE();
 
 @synthesize bridge = _bridge;
 

@@ -1,6 +1,6 @@
 #import <CoreLocation/CoreLocation.h>
 
-#import "RCTBridgeModule.h"
+// #import "RCTBridge.h"
 #import "RCTConvert.h"
 #import "RCTEventDispatcher.h"
 

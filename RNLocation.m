@@ -31,6 +31,10 @@ RCT_EXPORT_MODULE();
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 
         self.locationManager.pausesLocationUpdatesAutomatically = NO;
+        
+        if ([self.locationManager respondsToSelector:@selector(allowsBackgroundLocationUpdates)]) {
+            self.locationManager.allowsBackgroundLocationUpdates = YES;
+        }
     }
 
     return self;
